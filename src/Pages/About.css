@@ -1,0 +1,59 @@
+.about-page{
+
+    width:min(1200px,92%);
+
+    margin:auto;
+
+    padding:140px 0;
+
+}
+
+.about-hero{
+
+    text-align:center;
+
+    margin-bottom:110px;
+
+}
+
+.about-hero p{
+
+    color:#38BDF8;
+
+    letter-spacing:5px;
+
+    font-weight:600;
+
+}
+
+.about-hero h1{
+
+    color:white;
+
+    font-size:64px;
+
+    line-height:1.2;
+
+    margin:25px 0;
+
+}
+
+.about-hero span{
+
+    color:#60A5FA;
+
+}
+
+.about-hero h3{
+
+    max-width:750px;
+
+    margin:auto;
+
+    color:#94A3B8;
+
+    font-weight:400;
+
+    line-height:1.9;
+
+}

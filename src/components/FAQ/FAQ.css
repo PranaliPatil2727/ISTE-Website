@@ -1,0 +1,566 @@
+/* ========================= */
+/* FAQ PAGE */
+/* ========================= */
+
+.faq-page{
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:100vh;
+
+    padding:150px 0;
+
+    background:
+    radial-gradient(circle at top left,#7C3AED22,transparent 30%),
+    radial-gradient(circle at bottom right,#A855F722,transparent 35%),
+    linear-gradient(180deg,#060010,#0A0418,#12051F);
+
+}
+
+/* Purple Glow */
+
+.faq-page::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    background:#7C3AED;
+
+    opacity:.12;
+
+    border-radius:50%;
+
+    filter:blur(140px);
+
+    top:-180px;
+
+    left:-120px;
+
+    animation:blobOne 10s ease-in-out infinite alternate;
+
+}
+
+.faq-page::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    background:#A855F7;
+
+    opacity:.12;
+
+    border-radius:50%;
+
+    filter:blur(140px);
+
+    bottom:-180px;
+
+    right:-100px;
+
+    animation:blobTwo 12s ease-in-out infinite alternate;
+
+}
+
+/* ========================= */
+
+.faq-header{
+
+    width:min(900px,92%);
+
+    margin:auto;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.faq-header p{
+
+    color:#C084FC;
+
+    letter-spacing:6px;
+
+    font-weight:600;
+
+    font-size:18px;
+
+}
+
+.faq-header h1{
+
+    color:white;
+
+    font-size:68px;
+
+    margin:20px 0;
+
+}
+
+.faq-header h3{
+
+    color:#C4B5FD;
+
+    font-weight:400;
+
+    line-height:1.8;
+
+    max-width:720px;
+
+    margin:auto;
+
+}
+
+/* ========================= */
+
+.faq-grid{
+
+    width:min(1200px,92%);
+
+    margin:90px auto 0;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* ========================= */
+/* FLIP CARD */
+/* ========================= */
+
+.flip-card{
+
+    perspective:1200px;
+
+    height:320px;
+
+    cursor:pointer;
+
+    animation:cardAppear .8s ease forwards;
+
+    opacity:0;
+
+}
+
+.flip-inner{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+    transition:transform .8s ease;
+
+    transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    
+
+}
+
+.flip-card.flipped .flip-inner{
+
+    transform:rotateY(180deg);
+
+}
+
+.flip-front,
+.flip-back{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:38px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(168,85,247,.25);
+
+    overflow:hidden;
+
+    backface-visibility:hidden;
+
+    -webkit-backface-visibility:hidden;
+    box-sizing:border-box;
+
+}
+
+.flip-card:hover{
+
+    transform:translateY(-8px);
+
+    transition:transform .3s ease;
+
+}
+
+.flip-card:hover .flip-front,
+.flip-card:hover .flip-back{
+
+    border-color:#C084FC;
+
+    box-shadow:
+
+        0 0 30px rgba(168,85,247,.35),
+
+        0 0 60px rgba(168,85,247,.15);
+
+}
+
+/* ========================= */
+/* FRONT SIDE */
+/* ========================= */
+
+.flip-front{
+
+    align-items:flex-start;
+    transform:rotateY(0deg) translateZ(1px);
+
+}
+
+.flip-front small{
+
+    color:#C084FC;
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-bottom:18px;
+
+}
+
+.flip-front h2{
+
+    color:white;
+
+    font-size:30px;
+
+    line-height:1.35;
+
+    margin-bottom:auto;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.flip-front p{
+
+    color:#DDD6FE;
+
+    margin-top:30px;
+
+    font-size:16px;
+
+    font-weight:500;
+
+}
+
+.faq-number{
+
+    position:absolute;
+
+    right:25px;
+
+    bottom:5px;
+
+    font-size:110px;
+
+    font-weight:800;
+
+    color:rgba(255,255,255,.05);
+
+    user-select:none;
+
+    pointer-events:none;
+
+}
+
+/* ========================= */
+/* BACK SIDE */
+/* ========================= */
+
+.flip-back{
+
+    transform:rotateY(180deg) translateZ(1px);
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+}
+
+.flip-back small{
+
+    color:#C084FC;
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+}
+
+.flip-back p{
+
+    color:#E9D5FF;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+    flex:1;
+
+}
+
+.flip-back span{
+
+    color:#C084FC;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+/* ========================= */
+/* CTA */
+/* ========================= */
+
+.faq-cta{
+
+    width:min(900px,92%);
+
+    margin:120px auto 0;
+
+    text-align:center;
+
+    padding:65px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(168,85,247,.25);
+
+    box-shadow:
+
+        0 0 35px rgba(168,85,247,.18);
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.faq-cta h2{
+
+    color:white;
+
+    font-size:48px;
+
+    margin-bottom:35px;
+
+}
+
+.contact-btn{
+
+    border:none;
+
+    padding:18px 42px;
+
+    border-radius:50px;
+
+    background:linear-gradient(90deg,#7C3AED,#A855F7);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:
+
+        0 0 25px rgba(168,85,247,.35);
+
+}
+
+.contact-btn:hover{
+
+    transform:translateY(-6px) scale(1.03);
+
+    box-shadow:
+
+        0 0 35px rgba(168,85,247,.55),
+
+        0 0 70px rgba(168,85,247,.25);
+
+}
+
+/* ========================= */
+/* ANIMATIONS */
+/* ========================= */
+
+@keyframes cardAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes blobOne{
+
+    from{
+
+        transform:translate(0,0) scale(1);
+
+    }
+
+    to{
+
+        transform:translate(60px,50px) scale(1.2);
+
+    }
+
+}
+
+@keyframes blobTwo{
+
+    from{
+
+        transform:translate(0,0) scale(1);
+
+    }
+
+    to{
+
+        transform:translate(-60px,-40px) scale(1.15);
+
+    }
+
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:900px){
+
+.faq-header h1{
+
+    font-size:46px;
+
+}
+
+.faq-header h3{
+
+    font-size:17px;
+
+    padding:0 10px;
+
+}
+
+.faq-grid{
+
+    grid-template-columns:1fr;
+
+    gap:30px;
+
+}
+
+.flip-card{
+
+    height:300px;
+
+}
+
+.flip-front h2{
+
+    font-size:24px;
+
+}
+
+.faq-number{
+
+    font-size:90px;
+
+}
+
+.faq-cta{
+
+    padding:50px 25px;
+
+}
+
+.faq-cta h2{
+
+    font-size:36px;
+
+}
+
+.contact-btn{
+
+    width:100%;
+
+    max-width:280px;
+
+}
+
+}

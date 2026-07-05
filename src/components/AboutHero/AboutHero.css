@@ -1,0 +1,59 @@
+.about-hero{
+
+    padding:160px 0 120px;
+
+    text-align:center;
+
+}
+
+.about-container{
+
+    width:min(900px,92%);
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+.about-hero p{
+
+    color:#38BDF8;
+
+    letter-spacing:5px;
+
+    font-weight:600;
+    font-size:22px;
+
+
+}
+
+.about-hero h1{
+
+    color:white;
+
+    font-size:72px;
+
+    margin:25px 0;
+
+    line-height:1.15;
+
+}
+
+.about-hero span{
+
+    color:#60A5FA;
+
+}
+
+.about-hero h3{
+
+    width:100%;
+    max-width:750px;
+    text-align:center;
+    color:#94A3B8;
+    line-height:1.9;
+    font-weight:400;
+    font-size:20px;
+    margin:0;
+
+}

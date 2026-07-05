@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #050814;
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Root */
+#root {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+/* Cyber Grid Background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(59, 130, 246, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.06) 1px, transparent 1px);
+  background-size: 70px 70px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Blue Glow */
+body::after {
+  content: "";
+  position: fixed;
+  width: 700px;
+  height: 700px;
+  top: -250px;
+  left: -250px;
+  background: radial-gradient(circle, rgba(59,130,246,0.18), transparent 65%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+button {
+  cursor: pointer;
+}

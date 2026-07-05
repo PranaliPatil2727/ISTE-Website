@@ -1,0 +1,140 @@
+.join{
+
+    padding:140px 0;
+
+}
+
+.join-box{
+
+    width:min(900px,92%);
+
+    margin:auto;
+
+    padding:80px 60px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:linear-gradient(135deg,#0F172A,#1E3A8A);
+
+    border:1px solid rgba(59,130,246,.2);
+
+    box-shadow:0 0 50px rgba(37,99,235,.15);
+
+}
+
+.join-box span{
+
+    color:#7DD3FC;
+
+    letter-spacing:3px;
+
+    font-size:14px;
+
+}
+
+.join-box h2{
+
+    margin:25px 0;
+
+    font-size:58px;
+
+    color:white;
+
+    line-height:1.2;
+
+}
+
+.join-box p{
+
+    color:#CBD5E1;
+
+    max-width:650px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+.join-buttons{
+
+    margin-top:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.join-btn{
+
+    padding:16px 38px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#3B82F6;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+.mosaic-btn{
+
+    padding:16px 38px;
+
+    border-radius:50px;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    background:transparent;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+.join-btn:hover,
+.mosaic-btn:hover{
+
+    transform:translateY(-4px);
+
+    transition:.3s;
+
+}
+
+@media(max-width:768px){
+
+.join-box{
+
+padding:60px 30px;
+
+}
+
+.join-box h2{
+
+font-size:42px;
+
+}
+
+.join-buttons{
+
+flex-direction:column;
+
+}
+
+}

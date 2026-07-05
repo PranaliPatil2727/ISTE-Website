@@ -1,0 +1,539 @@
+/* ========================= */
+/* CONTACT PAGE */
+/* ========================= */
+
+.contact-page{
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:100vh;
+
+    padding:150px 0;
+
+    background:
+    radial-gradient(circle at top left,#7C3AED22,transparent 30%),
+    radial-gradient(circle at bottom right,#A855F722,transparent 35%),
+    linear-gradient(180deg,#060010,#0A0418,#12051F);
+
+}
+
+/* Purple Glow */
+
+.contact-page::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:#7C3AED;
+
+    opacity:.12;
+
+    filter:blur(140px);
+
+    top:-150px;
+
+    left:-120px;
+
+}
+
+.contact-page::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    background:#A855F7;
+
+    opacity:.12;
+
+    filter:blur(140px);
+
+    bottom:-170px;
+
+    right:-120px;
+
+}
+
+/* ========================= */
+
+.contact-header{
+
+    width:min(900px,92%);
+
+    margin:auto;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.contact-header p{
+
+    color:#C084FC;
+
+    letter-spacing:6px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.contact-header h1{
+
+    color:white;
+
+    font-size:68px;
+
+    margin:20px 0;
+
+}
+
+.contact-header h3{
+
+    color:#C4B5FD;
+
+    font-size:20px;
+
+    font-weight:400;
+
+    line-height:1.8;
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+/* ========================= */
+
+.contact-wrapper{
+
+    width:min(1200px,92%);
+
+    margin:90px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1.4fr;
+
+    gap:50px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* ========================= */
+/* INFO GRID */
+/* ========================= */
+
+.contact-info{
+
+    padding:20px 10px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.contact-info h2{
+
+    color:white;
+
+    font-size:38px;
+
+    margin-bottom:40px;
+
+}
+
+.info-item{
+
+    padding:18px 0;
+
+}
+
+.info-item span{
+
+    color:#C084FC;
+
+    letter-spacing:3px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.info-item p{
+
+    color:white;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-top:12px;
+
+}
+
+.info-divider{
+
+    width:100%;
+
+    height:1px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #A855F7,
+        transparent
+    );
+
+    margin:8px 0;
+
+}
+
+
+
+/* ========================= */
+/* FORM */
+/* ========================= */
+
+.contact-form{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(168,85,247,.25);
+
+    border-radius:28px;
+
+    padding:45px;
+
+}
+
+.contact-form h2{
+
+    color:white;
+
+    font-size:34px;
+
+    margin-bottom:35px;
+
+}
+
+.contact-form form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(168,85,247,.25);
+
+    border-radius:14px;
+
+    padding:18px;
+
+    color:white;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+
+    color:#BFA5FF;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    border-color:#C084FC;
+
+    box-shadow:0 0 20px rgba(168,85,247,.25);
+
+}
+
+/* ========================= */
+/* SEND BUTTON */
+/* ========================= */
+
+.contact-form button{
+
+    margin-top:10px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:linear-gradient(135deg,#7C3AED,#A855F7);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 0 25px rgba(168,85,247,.35);
+
+}
+
+.contact-form button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 35px rgba(168,85,247,.5),
+    0 0 70px rgba(168,85,247,.25);
+
+}
+
+/* ========================= */
+/* SOCIAL SECTION */
+/* ========================= */
+
+.social-section{
+
+    width:min(1000px,92%);
+
+    margin:120px auto;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.social-section h2{
+
+    color:white;
+
+    font-size:42px;
+
+    margin-bottom:45px;
+
+}
+
+.social-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.social-links a{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(168,85,247,.25);
+
+    backdrop-filter:blur(15px);
+
+    transition:.35s;
+
+    box-shadow:0 0 20px rgba(168,85,247,.15);
+
+}
+
+.social-links a:hover{
+
+    transform:translateY(-8px) scale(1.08);
+
+    border-color:#C084FC;
+
+    box-shadow:
+    0 0 35px rgba(168,85,247,.45),
+    0 0 70px rgba(168,85,247,.2);
+
+}
+
+/* ========================= */
+/* MAP */
+/* ========================= */
+
+.map-section{
+
+    width:min(1200px,92%);
+
+    margin:auto;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.map-section h2{
+
+    color:white;
+
+    font-size:42px;
+
+    margin-bottom:40px;
+
+}
+
+.map-container{
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(168,85,247,.25);
+
+    box-shadow:0 0 35px rgba(168,85,247,.18);
+
+    backdrop-filter:blur(18px);
+
+}
+
+.map-container iframe{
+
+    width:100%;
+
+    height:450px;
+
+    border:none;
+
+    display:block;
+
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:1000px){
+
+.contact-wrapper{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+
+@media(max-width:768px){
+
+.contact-header h1{
+
+    font-size:46px;
+
+}
+
+.contact-header h3{
+
+    font-size:17px;
+
+}
+
+
+
+.contact-form{
+
+    padding:30px;
+
+}
+
+.contact-form h2{
+
+    font-size:28px;
+
+}
+
+.social-links{
+
+    gap:20px;
+
+}
+
+.social-links a{
+
+    width:75px;
+
+    height:75px;
+
+    font-size:14px;
+
+}
+
+.map-container iframe{
+
+    height:320px;
+
+}
+
+}
