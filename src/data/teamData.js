@@ -1,4 +1,4 @@
-import profile from "../assets/team/profile.jpg";
+import profile from "../assets/Team/profile.jpg";
 
 const teamData = {
   faculty: [
